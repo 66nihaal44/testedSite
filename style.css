@@ -1,1 +1,6 @@
 body { background-color: grey; }
+<script>
+function changeBGColor() {
+  <body style="background-color:red;">
+}
+</script>
