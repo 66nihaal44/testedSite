@@ -1,6 +1,6 @@
-function changeBGColorToRed() {
-  document.body.style.background = "red";
+function changeBGColor(color) {
+  document.body.style.background = color;
 }
-function changeTextToGreen() {
-  document.getElementById("para").style.color = "green";
+function changeTextColor(textId, color) {
+  document.getElementById(textId).style.color = color;
 }
