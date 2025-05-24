@@ -1,8 +1,5 @@
-var $ = jQuery;
-$(document).ready(function{
-<div class="topnav">
-  <a href="https://66nihaal44.github.io/testedSite/">Main</a>
+document.getElementByClass('menu').innerHTML = "
+  <a href="https://66nihaal44.github.io/testedSite/">Main Page</a>
   <a href="https://66nihaal44.github.io/testedSite/secondpage">Second Page</a>
   <a href="https://66nihaal44.github.io/testedSite/quiz">Quiz</a>
-</div>
-}
+";
