@@ -1,5 +1,10 @@
-document.getElementByClass("menu").innerHTML = "
-  <a href='https://66nihaal44.github.io/testedSite/'>Main Page</a>
-  <a href='https://66nihaal44.github.io/testedSite/secondpage'>Second Page</a>
-  <a href='https://66nihaal44.github.io/testedSite/quiz'>Quiz</a>
-";
+mlink = document.createElement('a');
+mlink.title = "Main Page";
+mlink.href = "https://66nihaal44.github.io/testedSite/";
+document.getElementByClass("menu").appendChild(mlink);
+mlink.title = "Second Page";
+mlink.href = "https://66nihaal44.github.io/testedSite/secondpage";
+document.getElementByClass("menu").appendChild(mlink);
+mlink.title = "Quiz";
+mlink.href = "https://66nihaal44.github.io/testedSite/quiz";
+document.getElementByClass("menu").appendChild(mlink);
