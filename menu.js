@@ -1,9 +1,3 @@
-const mlink1 = document.createElement('a');
-disText1 = document.createTextNode("Main Page");
-mlink1.appendChild(disText1);
-mlink1.title = "Main Page";
-mlink1.href = "https://66nihaal44.github.io/testedSite/";
-document.getElementById("menu").appendChild(mlink1);
 const mlink2 = document.createElement('a');
 disText2 = document.createTextNode("Fibonacci");
 mlink2.appendChild(disText2);
