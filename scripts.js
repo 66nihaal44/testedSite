@@ -8,19 +8,19 @@ function addMenu(){
   const mlink1 = document.createElement('a');
   disText = document.createTextNode("Main Page");
   mlink1.appendChild(disText);
-  mlink1.title = "Main Page";
+  // mlink1.title = "Main Page";
   mlink1.href = "https://66nihaal44.github.io/testedSite/";
   document.getElementById("menu").appendChild(mlink1);
   const mlink2 = document.createElement('a');
   disText = document.createTextNode("Fibonacci");
   mlink2.appendChild(disText);
-  mlink2.title = "Fibonacci";
+  // mlink2.title = "Fibonacci";
   mlink2.href = "https://66nihaal44.github.io/testedSite/fibonacci";
   document.getElementById("menu").appendChild(mlink2);
   const mlink3 = document.createElement('a');
   disText = document.createTextNode("Quiz");
   mlink3.appendChild(disText);
-  mlink3.title = "Quiz";
+  // mlink3.title = "Quiz";
   mlink3.href = "https://66nihaal44.github.io/testedSite/quiz";
   document.getElementById("menu").appendChild(mlink3);
 }
