@@ -20,8 +20,8 @@
   const fList = document.getElementById('fibList');
   function addToFib(curNum){
     newFib = document.createElement('li');
-    var nMinTwo = +fList.getElementsByTagName('li')[curNum-1].textContent;
-    var nMinOne = +fList.getElementsByTagName('li')[curNum].textContent;
+    var nMinTwo = +(fList.getElementsByTagName('li')[curNum-1].textContent);
+    var nMinOne = +(fList.getElementsByTagName('li')[curNum].textContent);
     newFibV = nMinTwo + nMinOne;
     newFib.textContent = newFibV;
     fList.appendChild(newFib);
