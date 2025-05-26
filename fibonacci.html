@@ -6,7 +6,25 @@
 <body onload ="addMenu()">
 <link rel="stylesheet" href="style.css">
 <script src="scripts.js"></script>
-<h1>Test Site</h1>
-<p>Fibonacci Sequence</p>
+<h1>Fibonacci Sequence</h1>
+<p>Click to add to sequence</p>
+<button type="button" onclick="addToFib(curFib)">Next</button>
+<ul id="fList">
+  <li>1</li>
+  <li>1</li>
+</ul>
 </body>
 </html>
+<script>
+  var curFib = 1;
+  const fList = document.getElementById('fibList');
+  function addToFib(curNum){
+    newFib = document.createElement('li');
+    var nMinTwo = +fList.getElementsByTagName('li')[curNum-1].textContent;
+    var nMinOne = +fList.getElementsByTagName('li')[curNum].textContent;
+    newFibV = nMinTwo + nMinOne;
+    newFib.textContent = newFibV;
+    fList.appendChild(newFib);
+    curFib += 1;
+  }
+</script>
