@@ -10,17 +10,17 @@ function addMenu(){
   mlink1.appendChild(disText);
   mlink1.title = "Main Page";
   mlink1.href = "";
-  document.getElementById("menu").appendChild(mlink1);
+  document.getElementsByClassName("menu").appendChild(mlink1);
   const mlink2 = document.createElement('a');
   disText = document.createTextNode("Fibonacci");
   mlink2.appendChild(disText);
   mlink2.title = "Fibonacci";
   mlink2.href = "fibonacci";
-  document.getElementById("menu").appendChild(mlink2);
+  document.getElementsByClassName("menu").appendChild(mlink2);
   const mlink3 = document.createElement('a');
   disText = document.createTextNode("Quiz");
   mlink3.appendChild(disText);
   mlink3.title = "Quiz";
   mlink3.href = "quiz";
-  document.getElementById("menu").appendChild(mlink3);
+  document.getElementsByClassName("menu").appendChild(mlink3);
 }
