@@ -8,7 +8,7 @@ function addMenu(){
   const mlink1 = document.createElement('a');
   mlink1.textContent = "Main Page";
   mlink1.title = "Main Page";
-  mlink1.href = "";
+  mlink1.href = "index";
   document.getElementsById("menu").appendChild(mlink1);
   const mlink2 = document.createElement('a');
   mlink2.textContent = "Fibonacci";
