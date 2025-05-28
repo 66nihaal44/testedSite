@@ -9,20 +9,20 @@ function addMenu(){
   mlink1.textContent = "Main Page";
   mlink1.title = "Main Page";
   mlink1.href = "index";
-  document.getElementsById("menu").appendChild(mlink1);
+  document.getElementsByClassName("menu")[0].appendChild(mlink1);
   const mlink2 = document.createElement('a');
   mlink2.textContent = "Fibonacci";
   mlink2.title = "Fibonacci";
   mlink2.href = "fibonacci";
-  document.getElementById("menu").appendChild(mlink2);
+  document.getElementsByClassName("menu")[0].appendChild(mlink2);
   const mlink3 = document.createElement('a');
   mlink3.textContent = "Quiz";
   mlink3.title = "Quiz";
   mlink3.href = "quiz";
-  document.getElementById("menu").appendChild(mlink3);
+  document.getElementsByClassName("menu")[0].appendChild(mlink3);
   const mlink4 = document.createElement('a');
   mlink4.textContent = "Bouncing Ball";
   mlink4.title = "Bouncing Ball";
   mlink4.href = "bouncingball";
-  document.getElementById("menu").appendChild(mlink4);
+  document.getElementsByClassName("menu")[0].appendChild(mlink4);
 }
