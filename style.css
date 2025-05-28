@@ -11,6 +11,10 @@ p{
   font-family: arial;
   font-size: 18px;
 }
+button{
+  font-family: arial;
+  font-size: 18px;
+}
 .menu{
   overflow: hidden;
   background-color: white;
