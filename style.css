@@ -1,11 +1,28 @@
-body { background-color: grey; }
+body{
+  background-color: grey;
+}
 h1{
   color: blue;
   text-align: center;
-  font-family: wingdings;
+  font-family: arial;
   font-size: 40px;
 }
 p{
-  font-family: wingdings;
-    font-size: 18px;
+  font-family: arial;
+  font-size: 18px;
+}
+.menu{
+  overflow: hidden;
+  background-color: white;
+}
+.menu a{
+  font-family: arial;
+  font-size: 18px
+  color: red;
+  text-align: center;
+  padding: 9px;
+}
+.menu a.hover{
+  background-color: white;
+  color: cyan;
 }
