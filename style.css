@@ -19,18 +19,18 @@ button{
   font-family: arial;
   font-size: 18px;
 }
-.menu{
+#menu{
   overflow: hidden;
   background-color: white;
 }
-.menu a{
+#menu a{
   font-family: arial;
   font-size: 18px
   color: red;
   text-align: center;
   padding: 9px;
 }
-.menu a.hover{
+#menu a.hover{
   background-color: black;
   color: cyan;
 }
