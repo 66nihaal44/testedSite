@@ -1,12 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
 <link rel="stylesheet" href="style.css">
 <script src="scripts.js"></script>
+<script>
+  function dragStart (drag){
+    drag.dataTransfer.setData("text", drag.target.id);
+  }
+  
+</script>
+</head>
+<body>
 <div class="menu"></div>
 <body onload ="addMenu()">
 <p>Quiz questions</p>
 <br>
 <p>Drag the true facts about me into the box.</p>
 <div></div>
-<p id="stm1" draggable="true">1. </p> <br>
-<p id="stm2" draggable="true">1. </p> <br>
-<p id="stm3" draggable="true">1. </p> <br>
-<p id="stm4" draggable="true">1. </p>
+<p id="stm1" draggable="true" ondragstart="dragStart(event)">1. </p> <br>
+<p id="stm2" draggable="true" ondragstart="dragStart(event)">2. </p> <br>
+<p id="stm3" draggable="true" ondragstart="dragStart(event)">3. </p> <br>
+<p id="stm4" draggable="true" ondragstart="dragStart(event)">4. </p>
+</body>
+</html>
