@@ -4,10 +4,16 @@
 <link rel="stylesheet" href="style.css">
 <script src="scripts.js"></script>
 <script>
-  function dragStart (drag){
+  function dragStart(drag){
     drag.dataTransfer.setData("text", drag.target.id);
   }
-  
+  function dragOver(drag){
+    drag.preventDefault();
+  }
+  function dragDrop(drag){
+    drag.preventDefault();
+    drag.target.appendChild(document.getElementById(drag.dataTransfer.getData("text")));
+  }
 </script>
 </head>
 <body>
@@ -16,7 +22,7 @@
 <p>Quiz questions</p>
 <br>
 <p>Drag the true facts about me into the box.</p>
-<div></div>
+<div ondragover="dragOver(event)" ondrop="dragDrop(event)">Box</div>
 <p id="stm1" draggable="true" ondragstart="dragStart(event)">1. </p> <br>
 <p id="stm2" draggable="true" ondragstart="dragStart(event)">2. </p> <br>
 <p id="stm3" draggable="true" ondragstart="dragStart(event)">3. </p> <br>
