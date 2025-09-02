@@ -9,6 +9,17 @@
     font-size: 18px;
 }
 </style>
+</head>
+<div id="menu"></div>
+<body onload ="addMenu()">
+<h1>Fibonacci Sequence</h1>
+<p>Click to add to sequence</p>
+<button type="button" onclick="addToFib(curFib)">Next</button>
+<ul id="fibList">
+  <li>1</li>
+  <li>1</li>
+</ul>
+</body>
 <script>
   var curFib = 1;
   const fList = document.getElementById('fibList');
@@ -22,15 +33,4 @@
     curFib += 1;
   }
 </script>
-</head>
-<div id="menu"></div>
-<body onload ="addMenu()">
-<h1>Fibonacci Sequence</h1>
-<p>Click to add to sequence</p>
-<button type="button" onclick="addToFib(curFib)">Next</button>
-<ul id="fibList">
-  <li>1</li>
-  <li>1</li>
-</ul>
-</body>
 </html>
