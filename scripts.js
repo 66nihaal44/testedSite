@@ -21,8 +21,8 @@ function addMenu(){
   mlink3.href = "quiz";
   document.getElementById("menu").appendChild(mlink3);
   const mlink4 = document.createElement('a');
-  mlink4.textContent = "Bouncing Ball";
-  mlink4.title = "Bouncing Ball";
-  mlink4.href = "bouncingball";
+  mlink4.textContent = "Site Traffic";
+  mlink4.title = "Site Traffic";
+  mlink4.href = "sitetraffic";
   document.getElementById("menu").appendChild(mlink4);
 }
