@@ -15,21 +15,24 @@
 <body onload ="addMenu()">
 <h1>Fibonacci Sequence</h1>
 <p>Click to add to sequence</p>
-<button type="button" onclick="addToFib(curFib)">Next</button>
+<button type="button" onclick="addToFib()">Next</button>
 <ul id="fibList">
-  <li>1</li>
-  <li>1</li>
 </ul>
 </body>
 <script>
-  var curFib = 1;
+  var curFib = 0;
   const fList = document.getElementById('fibList');
-  function addToFib(curNum){
+  function addToFib(){
     newFib = document.createElement('li');
-    var nMinTwo = +(fList.getElementsByTagName('li')[curNum-1].textContent);
-    var nMinOne = +(fList.getElementsByTagName('li')[curNum].textContent);
-    newFibV = nMinTwo + nMinOne;
-    newFib.textContent = newFibV;
+    if(curFib < 2){
+      newFib.textContent = 1;
+    }
+    else{
+      var nMinTwo = +(fList.getElementsByTagName('li')[curFib-2].textContent);
+      var nMinOne = +(fList.getElementsByTagName('li')[curFib-1].textContent);
+      newFibV = nMinTwo + nMinOne;
+      newFib.textContent = newFibV;
+    }
     fList.appendChild(newFib);
     curFib += 1;
   }
