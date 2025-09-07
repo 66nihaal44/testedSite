@@ -1,5 +1,5 @@
 body{
-  background-color: grey;
+  background-image: linear-gradient(to top right, black, grey);
 }
 h1{
   color: blue;
