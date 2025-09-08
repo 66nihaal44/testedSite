@@ -4,25 +4,17 @@ function changeBGColor(color) {
 function changeTextColor(textId, color) {
   document.getElementById(textId).style.color = color;
 }
+function addItem(title, href){
+  const mlink = document.createElement('a');
+  mlink.textContent = title;
+  mlink.title = title;
+  mlink.href = href;
+  document.getElementById("menu").appendChild(mlink);
+}
 function addMenu(){
-  const mlink1 = document.createElement('a');
-  mlink1.textContent = "Main Page";
-  mlink1.title = "Main Page";
-  mlink1.href = "index";
-  document.getElementById("menu").appendChild(mlink1);
-  const mlink2 = document.createElement('a');
-  mlink2.textContent = "Fibonacci";
-  mlink2.title = "Fibonacci";
-  mlink2.href = "fibonacci";
-  document.getElementById("menu").appendChild(mlink2);
-  const mlink3 = document.createElement('a');
-  mlink3.textContent = "Quiz";
-  mlink3.title = "Quiz";
-  mlink3.href = "quiz";
-  document.getElementById("menu").appendChild(mlink3);
-  const mlink4 = document.createElement('a');
-  mlink4.textContent = "Site Traffic";
-  mlink4.title = "Site Traffic";
-  mlink4.href = "sitetraffic";
-  document.getElementById("menu").appendChild(mlink4);
+  addItem("Main Page", "index");
+  addItem("Fibonacci", "fibonacci");
+  addItem("Quiz", "quiz");
+  addItem("Resume", "resume");
+  addItem("Site Traffic", "sitetraffic");
 }
