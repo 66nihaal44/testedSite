@@ -14,7 +14,7 @@ function addItem(title, href){
 function addMenu(){
   addItem("Main Page", "index");
   addItem("Fibonacci", "fibonacci");
-  addItem("Quiz", "quiz");
+  addItem("iPhone", "iphone");
   addItem("Resume", "resume");
   addItem("Site Traffic", "sitetraffic");
 }
