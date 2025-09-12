@@ -14,6 +14,7 @@
     <div class="app"></div>
     <div class="app"></div>
   </div>
+  <div class="appScreen" id="appScreen"></div> 
 </div>
 </body>
   <style>
@@ -22,11 +23,13 @@
       height: 480px;
       background-color: white;
       justify-items: center;
+      position: center;
     }
     # screen{
       width: 250px;
       height: 460px;
       background-color: black;
+      position: center;
     }
     # app{
       width: 40px;
@@ -34,8 +37,27 @@
       margin: 10px;
       background-color: blue;
       display: inline-block;
+      cursor = pointer;
+    }
+    # appScreen{
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      background-color: white;
+    }
+    # appScreen.opened{
+      display: flex;
+    }
     </style>
   <script>
-    
+    const appScreen = document.getElementsByClassName("appScreen");
+    function openApp(){
+      appScreen.innerHTML = "App Opened";
+      appScreen.classList.add("opened");
+    }
+    function closeApp(){
+      appScreen.classList.remove("opened");
+    }
   </script>
 </html>
