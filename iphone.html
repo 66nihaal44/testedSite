@@ -63,17 +63,17 @@
     <div class="app" onclick="openApp()"></div>
     <div class="appScreen"></div> 
   </div>
-  <div id="homeButton"></div>
+  <div id="homeButton" onclick="closeApp()"></div>
 </div>
 </body>
 <script>
-    const appScreen = document.getElementsByClassName("appScreen")[0];
-    function openApp(){
-      appScreen.innerHTML = "App Opened";
-      appScreen.classList.add("opened");
-    }
-    function closeApp(){
-      appScreen.classList.remove("opened");
-    }
+  const appScreen = document.getElementsByClassName("appScreen")[0];
+  function openApp(){
+    appScreen.innerHTML = "App Opened";
+    appScreen.classList.add("opened");
+  }
+  function closeApp(){
+    appScreen.classList.remove("opened");
+  }
 </script>
 </html>
