@@ -28,14 +28,27 @@
     .appScreen{
       display: none;
       position: absolute;
+      top: 10px;
+      left: 0px;
       width: 100%;
       height: 80%;
       background-color: white;
       justify-content: center;
       align-items: center;
+      font-size: 10px;
     }
     .appScreen.opened{
       display: flex;
+    }
+    #homeButton{
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -50,6 +63,7 @@
     <div class="app" onclick="openApp()"></div>
     <div class="appScreen"></div> 
   </div>
+  <div id="homeButton"></div>
 </div>
 </body>
 <script>
