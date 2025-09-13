@@ -25,8 +25,8 @@
     #screen{
       width: 260px;
       height: 470px;
-      top: 50%;
-      left: 50%;
+      top: 5px;
+      left: 5px;
       background-color: black;
       border-radius: 25px;
       position: relative;
@@ -71,11 +71,11 @@
 <body onload ="addMenu()">
 <h1>iPhone Simulation</h1><br>
 <div id="phone">
-  <div id="statusBar">
-    <span>Time</span>
-    <span>Battery</span>
-  </div>
   <div id="screen">
+    <div id="statusBar">
+      <span>Time</span>
+      <span>Battery</span>
+    </div>
     <div class="app" onclick="openApp()"></div>
     <div class="app" onclick="openApp()"></div>
     <div class="app" onclick="openApp()"></div>
