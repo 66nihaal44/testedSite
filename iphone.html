@@ -3,20 +3,6 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <script src="scripts.js"></script>
-</head>
-<body>
-<div id="menu"></div>
-<body onload ="addMenu()">
-<h1>iPhone Simulation</h1><br>
-<div id="phone">
-  <div id="screen">
-    <div class="app" onclick="openApp()"></div>
-    <div class="app" onclick="openApp()"></div>
-    <div class="app" onclick="openApp()"></div>
-  </div>
-  <div class="appScreen"></div> 
-</div>
-</body>
   <style>
     #phone{
       width: 270px;
@@ -45,12 +31,28 @@
       width: 100%;
       height: 80%;
       background-color: white;
+      justify-content: center;
+      align-items: center;
     }
     .appScreen.opened{
       display: flex;
     }
-    </style>
-  <script>
+  </style>
+</head>
+<body>
+<div id="menu"></div>
+<body onload ="addMenu()">
+<h1>iPhone Simulation</h1><br>
+<div id="phone">
+  <div id="screen">
+    <div class="app" onclick="openApp()"></div>
+    <div class="app" onclick="openApp()"></div>
+    <div class="app" onclick="openApp()"></div>
+    <div class="appScreen"></div> 
+  </div>
+</div>
+</body>
+<script>
     const appScreen = document.getElementsByClassName("appScreen")[0];
     function openApp(){
       appScreen.innerHTML = "App Opened";
@@ -59,5 +61,5 @@
     function closeApp(){
       appScreen.classList.remove("opened");
     }
-  </script>
+</script>
 </html>
