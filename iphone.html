@@ -56,7 +56,7 @@
     .appScreen.opened{
       display: flex;
     }
-    #homeButton{
+    #homeButtonOut{
       width: 30px;
       height: 30px;
       background-color: white;
@@ -64,6 +64,15 @@
       position: absolute;
       bottom: 15px;
       left: calc(50% - 15px);
+    }
+    #homeButtonIn{
+      width: 26px;
+      height: 26px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      bottom: calc(50% - 2px);
+      left: calc(50% - 2px);
       cursor: pointer;
     }
   </style>
@@ -83,7 +92,9 @@
     <div class="app" onclick="openApp()"></div>
     <div class="appScreen"></div> 
   </div>
-  <div id="homeButton" onclick="closeApp()"></div>
+  <div id="homeButtonOut">
+    <div id="homeButtonIn" onclick="closeApp()"></div>
+  </div>
 </div>
 </body>
 <script>
