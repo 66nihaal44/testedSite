@@ -91,12 +91,15 @@
 </body>
 <script>
   const appScreen = document.getElementsByClassName("appScreen")[0];
+  const statusBar = document.getElementById("statusBar");
   function openApp(){
     appScreen.innerHTML = "App Opened";
     appScreen.classList.add("opened");
+    statusBar.style.color = black;
   }
   function closeApp(){
     appScreen.classList.remove("opened");
+    statusBar.style.color = white;
   }
 </script>
 </html>
