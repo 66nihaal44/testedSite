@@ -25,17 +25,28 @@ h1{
   font-family: arial;
   font-size: 2.5rem;
 }
-p{
-  font-family: arial;
-  font-size: 18px;
+main{
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
 }
-div{
-  font-family: arial;
-  font-size: 22px;
+p{
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 button{
-  font-family: arial;
-  font-size: 18px;
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: lightblue;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: darkblue;
 }
 #menu{
   overflow: hidden;
@@ -51,4 +62,10 @@ button{
 #menu a.hover{
   background-color: black;
   color: cyan;
+}
+footer{
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: grey;
 }
